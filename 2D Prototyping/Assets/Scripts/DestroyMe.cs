@@ -11,7 +11,7 @@ public class DestroyMe : MonoBehaviour {
 	//On awake run timer to destroy item
 	void Awake () {
 		Destroy (gameObject, aliveTime);
-	}
+	}  
 	
 	// Update is called once per frame
 	void Update () {
