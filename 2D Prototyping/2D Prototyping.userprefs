@@ -1,16 +1,14 @@
-﻿<Properties StartupConfiguration="{4C9C27B3-EBE1-6660-3AB4-5EB183CC41FB}|Unit Tests">
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="MonoDevelop.Default" />
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/playerController.cs">
     <Files>
-      <File FileName="Assets/Scripts/projectileController.cs" Line="16" Column="75" />
-      <File FileName="Assets/Scripts/DestroyMe.cs" Line="20" Column="2" />
-      <File FileName="Assets/Scripts/playerController.cs" Line="22" Column="26" />
+      <File FileName="Assets/Scripts/DestroyMe.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/projectileController.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/playerController.cs" Line="14" Column="27" />
     </Files>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MultiItemStartupConfigurations />
 </Properties>
