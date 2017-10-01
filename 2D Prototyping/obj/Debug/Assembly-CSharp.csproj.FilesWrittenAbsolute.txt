@@ -21,3 +21,26 @@
 /Users/ryan/Documents/School/Unity/2D Prototyping/Temp/bin/Debug/Unity.CecilTools.dll
 /Users/ryan/Documents/School/Unity/2D Prototyping/Temp/bin/Debug/Mono.Cecil.Pdb.dll
 /Users/ryan/Documents/School/Unity/2D Prototyping/Temp/bin/Debug/Mono.Cecil.Mdb.dll
+/Users/ryan/Documents/School/Intro To Game Art/SproutUnity/Sprout/2D Prototyping/Temp/bin/Debug/Assembly-CSharp.dll.mdb
+/Users/ryan/Documents/School/Intro To Game Art/SproutUnity/Sprout/2D Prototyping/Temp/bin/Debug/Assembly-CSharp.dll
+/Users/ryan/Documents/School/Intro To Game Art/SproutUnity/Sprout/2D Prototyping/obj/Debug/Assembly-CSharp.dll
+/Users/ryan/Documents/School/Intro To Game Art/SproutUnity/Sprout/2D Prototyping/obj/Debug/Assembly-CSharp.dll.mdb
+/Users/ryan/Documents/School/Intro To Game Art/SproutUnity/Sprout/2D Prototyping/Temp/bin/Debug/UnityEngine.dll
+/Users/ryan/Documents/School/Intro To Game Art/SproutUnity/Sprout/2D Prototyping/Temp/bin/Debug/UnityEditor.dll
+/Users/ryan/Documents/School/Intro To Game Art/SproutUnity/Sprout/2D Prototyping/Temp/bin/Debug/UnityEngine.UI.dll
+/Users/ryan/Documents/School/Intro To Game Art/SproutUnity/Sprout/2D Prototyping/Temp/bin/Debug/UnityEngine.Networking.dll
+/Users/ryan/Documents/School/Intro To Game Art/SproutUnity/Sprout/2D Prototyping/Temp/bin/Debug/UnityEngine.TestRunner.dll
+/Users/ryan/Documents/School/Intro To Game Art/SproutUnity/Sprout/2D Prototyping/Temp/bin/Debug/nunit.framework.dll
+/Users/ryan/Documents/School/Intro To Game Art/SproutUnity/Sprout/2D Prototyping/Temp/bin/Debug/UnityEngine.Timeline.dll
+/Users/ryan/Documents/School/Intro To Game Art/SproutUnity/Sprout/2D Prototyping/Temp/bin/Debug/UnityEngine.Analytics.dll
+/Users/ryan/Documents/School/Intro To Game Art/SproutUnity/Sprout/2D Prototyping/Temp/bin/Debug/UnityEngine.HoloLens.dll
+/Users/ryan/Documents/School/Intro To Game Art/SproutUnity/Sprout/2D Prototyping/Temp/bin/Debug/Mono.Cecil.dll
+/Users/ryan/Documents/School/Intro To Game Art/SproutUnity/Sprout/2D Prototyping/Temp/bin/Debug/Unity.SerializationLogic.dll
+/Users/ryan/Documents/School/Intro To Game Art/SproutUnity/Sprout/2D Prototyping/Temp/bin/Debug/Unity.DataContract.dll
+/Users/ryan/Documents/School/Intro To Game Art/SproutUnity/Sprout/2D Prototyping/Temp/bin/Debug/ExCSS.Unity.dll
+/Users/ryan/Documents/School/Intro To Game Art/SproutUnity/Sprout/2D Prototyping/Temp/bin/Debug/Unity.Legacy.NRefactory.dll
+/Users/ryan/Documents/School/Intro To Game Art/SproutUnity/Sprout/2D Prototyping/Temp/bin/Debug/Unity.UNetWeaver.dll
+/Users/ryan/Documents/School/Intro To Game Art/SproutUnity/Sprout/2D Prototyping/Temp/bin/Debug/Unity.UNetWeaver.dll.mdb
+/Users/ryan/Documents/School/Intro To Game Art/SproutUnity/Sprout/2D Prototyping/Temp/bin/Debug/Unity.CecilTools.dll
+/Users/ryan/Documents/School/Intro To Game Art/SproutUnity/Sprout/2D Prototyping/Temp/bin/Debug/Mono.Cecil.Pdb.dll
+/Users/ryan/Documents/School/Intro To Game Art/SproutUnity/Sprout/2D Prototyping/Temp/bin/Debug/Mono.Cecil.Mdb.dll
