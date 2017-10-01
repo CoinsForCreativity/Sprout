@@ -6,7 +6,7 @@ public class playerController : MonoBehaviour {
 
 	//movement variables
 	public float maxSpeed; //max speed of character
-
+	 
 	//jumping vars
 	bool grounded = false;
 	float groundCheckRadius = 0.2f; //radius that checks if player is grounded
