@@ -6,7 +6,7 @@ public class enemyHealth : MonoBehaviour {
 
 	//enemies max health
 	public float enemyMaxHealth;
-	 
+
 	//Enemy DeathFX
 	public GameObject deathFX;
 
