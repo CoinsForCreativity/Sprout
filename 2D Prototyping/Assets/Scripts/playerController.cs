@@ -1,6 +1,7 @@
-﻿using System.Collections;
+﻿ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class playerController : MonoBehaviour {
 
@@ -32,11 +33,20 @@ public class playerController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update(){
-		if (grounded && Input.GetAxis ("Jump") > 0) {
+		if (grounded && Input.GetButtonDown("Jump")) {
 			grounded = false;
 			myAnim.SetBool ("isGrounded", grounded); //set to false because player will no longer be on the ground
 			myRB.AddForce(new Vector2(0, jumpHeight)); //adds force to push character up
 		}
+
+
+		//checks if player has fallen off a platform and resets the stage
+		if(this.transform.position.y <= -20)
+		{
+			//will reload current scene
+			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+		}
+
 		// Player shooting
 		if (Input.GetAxisRaw ("Fire1") > 0) {
 			fireMissle ();
@@ -44,6 +54,8 @@ public class playerController : MonoBehaviour {
 
 
 	}
+
+
 
 
 	void FixedUpdate () {
