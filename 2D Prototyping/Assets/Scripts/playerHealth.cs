@@ -66,21 +66,18 @@ public class playerHealth : MonoBehaviour {
 			
 	}
 
+
+
 	public void makeDead(){
 		//Instantiate deathFX on GameObject
 		Instantiate (deathFX, transform.position, transform.rotation);
-		playerAlive = false;
-		//Destroy player
-		while(timer >= 0) {
-			timer -= Time.deltaTime;
-			if (!playerAlive) {
-				if (timer <= 0) {
-					SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-
-				}
-			}
-		}
 		Destroy(gameObject);
+	
+		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+
+
+		//Destroy player
+
 
 
 
