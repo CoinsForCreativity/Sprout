@@ -44,8 +44,11 @@ public class playerController : MonoBehaviour {
 		if(this.transform.position.y <= -20)
 		{
 			//will reload current scene
-			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+			Destroy(this.gameObject);
+			//SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 		}
+
+
 
 		// Player shooting
 		if (Input.GetAxisRaw ("Fire1") > 0) {

@@ -1,11 +1,19 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
 public class enemyDamage : MonoBehaviour {
 
+	//public Button restBtn;
+	public GameObject restartButton;
 	//Enemy Damage
 	public float damage;
+	public GameObject player;
+
+	//public bool playerDead;
 
 	//Damage rate
 	public float damageRate;
@@ -19,13 +27,25 @@ public class enemyDamage : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		nextDamage = 0f;
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
+
+		//restBtn.interactable = false;
 	}
 
+
+	void Awake(){
+		player = GameObject.FindGameObjectWithTag("Player");
+		restartButton = GameObject.Find ("RestartButton");
+		restartButton.gameObject.SetActive(false);
+	}
+	// Update is called once per frame
+	void Update () {
+		if (player == null || player.transform.position.y <= -20) {
+			//Debug.Log("player is dead");
+			restartButton.gameObject.SetActive(true);
+		}
+	}
+
+	
 
 	void OnTriggerStay2D(Collider2D other){
 		//If the player is being collided with and next damage is less than current time
@@ -33,16 +53,22 @@ public class enemyDamage : MonoBehaviour {
 			//get player health
 			playerHealth playersHealth = other.gameObject.GetComponent<playerHealth>();
 
+
 			//Add damage to the player
 			playersHealth.addDamage(damage);
-
+//			
 			//Updates the next time the player can take damage
 			nextDamage = Time.time + damageRate;
+
 
 			//Push the player back after taking damage
 			pushBack(other.transform);
 		}
+
+
 	}
+
+
 
 	//Push the player back after taking damage
 	void pushBack(Transform pushedObject){
@@ -63,4 +89,11 @@ public class enemyDamage : MonoBehaviour {
 		pushRB.AddForce(pushDirection, ForceMode2D.Impulse);
 
 	}
+
+	public void reset(){
+		//Debug.Log ("Button is clicked");
+		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+	}
+
+
 }

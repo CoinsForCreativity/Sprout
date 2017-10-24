@@ -1,21 +1,25 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.EventSystems;
 
 public class playerHealth : MonoBehaviour {
+
+
+
 
 	//player maxHealth
 	public float maxHealth;
 
-	public float timer;
 
 	//create gameobject that can instantiate death effects game object
 	public GameObject deathFX;
 
 	//player current health
-	private float currentHealth;
+	public float currentHealth;
 
 	//Stop movement of player upon death
 	playerController controlMovement;
@@ -23,12 +27,30 @@ public class playerHealth : MonoBehaviour {
 	//HUD variables
 	public Slider healthSlider;
 
-	bool playerAlive;
+//	public void minusTimer() {
+//		if (countdown == 0) {
+//			countdown = timer;
+//			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+//
+//		} else {
+//			countdown -= 1;
+//
+//		}
+//	}
 
-
+	void Awake(){
+		
+	}
+	 
 
 	// Use this for initialization
 	void Start () {
+		
+
+
+		//Set button to invisible
+
+
 		//Sets playes current health to max health
 		currentHealth = maxHealth;
 
@@ -41,13 +63,15 @@ public class playerHealth : MonoBehaviour {
 		//HUD Slider health value
 		healthSlider.value=maxHealth;
 
-		playerAlive = true;
-		timer = 20000f;
+
+
 	}
-	
+
+
+
 	// Update is called once per frame
 	void Update () {
-
+		
 		//Debug.Log (playerAlive);
 
 	}
@@ -61,27 +85,38 @@ public class playerHealth : MonoBehaviour {
 		healthSlider.value = currentHealth;
 
 		if (currentHealth <= 0) {
+			
 			makeDead ();
+
 		}
 			
 	}
 
 
 
-	public void makeDead(){
+	
+//	IEnumerator playerDeathWait()
+//	{
+//		Debug.Log("running");
+//
+//		yield return new WaitForSeconds(5.0f);
+//		Debug.Log("after wait");
+//		yield break;
+//	}
+
+
+	void makeDead(){
 		//Instantiate deathFX on GameObject
 		Instantiate (deathFX, transform.position, transform.rotation);
 		Destroy(gameObject);
-	
-		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-
-
-		//Destroy player
-
 
 
 
 	}
+
+
+
+
 
 
 }

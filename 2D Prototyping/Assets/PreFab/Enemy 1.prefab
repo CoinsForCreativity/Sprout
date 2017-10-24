@@ -108,7 +108,7 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.12, y: 0.13}
+  m_Size: {x: 0.14, y: 0.13}
   m_Direction: 0
 --- !u!70 &70269913435566880
 CapsuleCollider2D:
@@ -123,7 +123,7 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.12, y: 0.12}
+  m_Size: {x: 0.11, y: 0.1}
   m_Direction: 0
 --- !u!114 &114165463422018640
 MonoBehaviour:
@@ -136,9 +136,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0cedfe3d3b404c80865cdf0711e04bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  restartButton: {fileID: 0}
   damage: 2
-  damageRate: 1
-  pushBackForce: 20
+  player: {fileID: 0}
+  damageRate: 2
+  pushBackForce: 10
 --- !u!114 &114311977625362626
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -150,7 +152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5bd95ecd0da6744dcb105ce096f8f87c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
+  moveSpeed: 7
 --- !u!114 &114373091938612756
 MonoBehaviour:
   m_ObjectHideFlags: 1
