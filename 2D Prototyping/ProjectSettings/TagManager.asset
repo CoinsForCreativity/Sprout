@@ -17,7 +17,7 @@ TagManager:
   - 
   - Ground
   - Shootable
-  - 
+  - background
   - 
   - 
   - 
@@ -45,4 +45,7 @@ TagManager:
     locked: 0
   - name: 1
     uniqueID: 3719010891
+    locked: 0
+  - name: background
+    uniqueID: 178826219
     locked: 0
