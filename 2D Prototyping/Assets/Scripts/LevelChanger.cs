@@ -8,7 +8,7 @@ public class LevelChanger : MonoBehaviour {
     //public string levelToLoad;  //this is so you can just drag and drop the level to load in the inspector
 	public int scene;
     bool loaded;  //used to load scene if not loaded
- 
+
 
 	// Use this for initialization
 	void Start () {

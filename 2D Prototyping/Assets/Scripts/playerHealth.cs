@@ -46,13 +46,13 @@ public class playerHealth : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		
-
+		currentHealth = maxHealth;
 
 		//Set button to invisible
 
 
 		//Sets playes current health to max health
-		currentHealth = maxHealth;
+
 
 		//Get player controller object
 		controlMovement = GetComponent<playerController> ();
